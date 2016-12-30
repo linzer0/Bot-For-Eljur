@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<state>200</state>
+	<error/>
+	<result>
+		<student name="6242" title="Хилажев	 Линар	">
+			<day name="20161226" title="Понедельник">
+				<item name="Экономика" num="1" room="" teacher="Гордеева   Виктория Вячеславовна"/>
+				<item name="Англ. яз." num="2" room="" teacher="Абубакиров Явдат Абдрахманович" grp_short="И.я2" grp="И.я2"/>
+				<item name="Алгебра и НА" num="3" room="" teacher="Абраров Азат Марсович"/>
+				<item name="Алгебра и НА" num="4" room="" teacher="Абраров Азат Марсович"/>
+				<item name="Биология" num="5" room="" teacher="Ахунзянова Зиля Гайниахметовна"/>
+				<item name="Русс.лит" num="6" room="" teacher="Якупова Фаима Галиевна"/>
+				<item name="Русский яз." num="7" room="" teacher="Якупова Фаима Галиевна"/>
+			</day>
+			<day name="20161227" title="Вторник">
+				<item name="Физ. культура" num="1" room="" teacher="Ханнанов Рустам Маратович"/>
+				<item name="Англ. яз." num="2" room="" teacher="Абубакиров Явдат Абдрахманович" grp_short="И.я2" grp="И.я2"/>
+				<item name="Башк. лит-ра" num="3" room="" teacher="Исламова Тансулпан Муллахметовна" grp_short="Баш 2" grp="Баш 2"/>
+				<item name="История" num="4" room="" teacher="Зиганнуров Рашит Хатыбович"/>
+				<item name="Русс.лит" num="5" room="" teacher="Якупова Фаима Галиевна"/>
+				<item name="Химия" num="6" room="" teacher="Гумеров Айнур Мансурович"/>
+				<item name="Обществознание" num="7" room="" teacher="Хажиева  Алсу  Талгатовна"/>
+			</day>
+			<day
+					name="20161228"
+					title="Среда">
+				<item name="Физика" num="1" room="" teacher="Юлдашев Загир Равильевич"/>
+				<item name="Физика" num="2" room="" teacher="Юлдашев Загир Равильевич"/>
+				<item name="Башк. лит-ра" num="3" room="" teacher="Исламова Тансулпан Муллахметовна" grp_short="Баш 2" grp="Баш 2"/>
+				<item name="Алгебра и НА" num="4" room="" teacher="Абраров Азат Марсович"/>
+				<item name="Геометрия" num="5" room="" teacher="Абраров Азат Марсович"/>
+				<item name="Англ. яз." num="6" room="" teacher="Абубакиров Явдат Абдрахманович" grp_short="И.я2" grp="И.я2"/>
+			</day>
+			<day name="20161229" title="Четверг" alert="vacation">
+				<item name="Физ. культура" num="1" room="" teacher="Ханнанов Рустам Маратович"/>
+				<item name="Русс.лит" num="2" room="" teacher="Якупова Фаима Галиевна"/>
+				<item name="Инф. и ИКТ" num="4" room="" teacher="Нигматуллин Вадим Ринатович" grp_short="Тех2" grp="Тех2"/>
+				<item name="Инф. и ИКТ" num="5" room="" teacher="Нигматуллин Вадим Ринатович" grp_short="Тех2" grp="Тех2"/>
+			</day>
+			<day name="20161230" title="Пятница" alert="vacation">
+				<item name="ОБЖ" num="1" room="" teacher="Кумушбаев Ражап Рахметович"/>
+				<item name="Физика" num="2" room="" teacher="Юлдашев Загир Равильевич"/>
+				<item name="Физика" num="3" room="" teacher="Юлдашев Загир Равильевич"/>
+				<item name="Физ. культура" num="4" room="" teacher="Ханнанов Рустам Маратович"/>
+				<item name="География" num="5" room="" teacher="Ахметова Асия Шарифьяновна"/>
+			</day>
+			<day name="20161231" title="Суббота" alert="vacation">
+				<item name="Инф. и ИКТ" num="1" room="" teacher="Нигматуллин Вадим Ринатович" grp_short="Тех2" grp="Тех2"/>
+				<item name="Инф. и ИКТ" num="2" room="" teacher="Нигматуллин Вадим Ринатович" grp_short="Тех2" grp="Тех2"/>
+				<item name="Физика" num="3" room="" teacher="Юлдашев Загир Равильевич"/>
+				<item name="История" num="4" room="" teacher="Зиганнуров Рашит Хатыбович"/>
+				<item name="Алгебра и НА" num="5" room="" teacher="Абраров Азат Марсович"/>
+				<item name="Геометрия" num="6" room="" teacher="Абраров Азат Марсович"/>
+			</day>
+		</student>
+	</result>
+</response>

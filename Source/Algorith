@@ -1,0 +1,88 @@
+# -*- coding: utf-8 -*-
+import telebot
+import config
+bot = telebot.TeleBot(config.token)
+#bot.send_message(config.chat_id,"Test");
+upd = bot.get_updates()
+#print(upd)
+last_upd = upd[-1]
+message_from_user = last_upd.message
+
+print(bot.get_me())
+
+
+def log(message,answer):
+    from datetime import datetime
+    print('\n',"--------")
+    print(datetime.now())
+    print("Cообщение от [0] [1]. (id=[2]) \n Текст - [3]".format(message_from_user.first_name,
+                                                                message_from_user.last_name,
+                                                                 str(message_from_user.id),
+                                                                 message.text))
+    print(answer)
+
+#print(message_from_user)
+@bot.message_handler(content_types=['text'])
+def handle_text(message):
+    answer = "Ты не умеешь играть в эту игру"
+    if(message.text=="a"):
+        answer = "A";
+        log(message,answer)
+        bot.send_message(message.chat.id,"B")
+    elif(message.text=="B"):
+        answer = "C";
+        log(message,answer)
+        bot.send_message(message.chat.id,"C")
+
+bot.polling(none_stop=True, interval=0)
+
+///
+печатает, то что печатали мы
+
+# -*- coding: utf-8 -*-
+import telebot
+import config
+bot = telebot.TeleBot(config.token)
+#bot.send_message(config.chat_id,"Test");
+@bot.message_handler(content_types=['text'])
+def handle_text(message):
+    bot.send_message(message.chat.id,message.text)
+bot.polling(none_stop=True,interval=0)
+///
+#-*- coding: utf-8 -*-
+import telebot
+import config
+
+bot = telebot.TeleBot(config.token)
+#bot.send_message(config.chat_id,"Test");
+#response = urllib.request.urlopen(config.path)
+html = response.read()
+#f=open("text.xml",'w')
+#f.write(str(html))
+@bot.message_handler(content_types=['text'])
+def handle_text(message):
+    bot.send_message(message.chat.id,html)
+bot.polling(none_stop=True,interval=0)
+import xml.etree.ElementTree as ET
+root = ET.fromstring(config.file)
+import lxml
+import json
+#print "root subelements:",root.getchildren()
+#print (root.getchildren()[2].getchildren().getchildren())
+#print(dir(root))
+student = root.getchildren()[2].getchildren()[0]
+#items = root.getchildren()[2].getchildren()[0].getchildren()
+days = [root.getchildren()[2].getchildren()[0].getchildren()]
+
+
+
+
+
+#student = [root.findall('day',days)]
+#print student
+
+#print items
+#print(dir(items))
+#days=[days for days in root.findall('day') if days.findtext('name')]
+
+///n
