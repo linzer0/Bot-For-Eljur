@@ -1,4 +1,4 @@
-import Parser
+import parser
 import config
 import json
 class curitem(object):
@@ -9,21 +9,22 @@ class curitem(object):
         self.teacher = teacher;
         #self.grp_short=grp_short
         #self.grp = grp
-jsonStr = Parser.Parsing(config.filename)
+jsonStr = parser.Parsing(config.filename)
 #print jsonStr
 jsonStr = json.loads(jsonStr)
 #print jsonStr
-print 20*'#'
+def Works():
+    print (20*'#')
 
-for i in range(0,5):
-    day = jsonStr['response']['result']['student']['day'][i]['title']
-    print day
-    for row in jsonStr['response']['result']['student']['day'][i]['item']:
+    for i in range(0,5):
+        day = jsonStr['response']['result']['student']['day'][i]['title']
+        print (day)
+        for row in jsonStr['response']['result']['student']['day'][i]['item']:
 
-        d=curitem(**row)
-        teacher=d.teacher
-        room = d.room
-        num = d.num
-        name = d.name
-        print num,name,room,teacher
-    print 20*'#'
+            d=curitem(**row)
+            teacher=d.teacher
+            room = d.room
+            num = d.num
+            name = d.name
+            print (num,name,room,teacher)
+
