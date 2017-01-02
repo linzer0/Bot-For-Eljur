@@ -85,4 +85,37 @@ days = [root.getchildren()[2].getchildren()[0].getchildren()]
 #print(dir(items))
 #days=[days for days in root.findall('day') if days.findtext('name')]
 
-///n
+///////////////////////////////////
+    AllClass = types.ReplyKeyboardMarkup()
+    AllClass.row('11','10','9','8', '7')
+    OneClass = types.ReplyKeyboardMarkup()
+    bot.send_message(config.chat_id, "Choose your class level:", reply_markup=AllClass)
+    def meth():
+        bot.send_message(config.chat_id, "Choose your class:", reply_markup=OneClass)
+
+    if(r=='11'):
+        print("ElEVEN")
+        OneClass.row('11A', '11Б', '11В','11Г','11Д','11Е','11Ж')
+        meth()
+
+    elif(r=='10'):
+        print("TEN")
+        OneClass.row('10А', '10Б','10В','10Г', '10Д','10Е')
+        meth()
+
+    elif(r=='9'):
+        print("NINE")
+        OneClass.row('9A', '9Б', '9В','9Г','9Г','9Д','9Е','9Ж')
+        meth()
+
+    elif(r=='8'):
+        print("EIGHT")
+        OneClass.row('8A', '8Б', '8В','8Г')
+        meth()
+
+    elif(r=='7'):
+        print("SEVEN")
+        OneClass.row('7А','7В')
+        meth()
+    print(r)
+    ///////////////////////////////////
